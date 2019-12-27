@@ -1,1 +1,42 @@
 /* You can add global styles to this file, and also import other style files */
+
+.float-left {
+    float: left;
+}
+
+.float-right {
+    float: right;
+}
+
+.margin-container {
+    margin: 35px 60px;
+}
+
+.width-1500px {
+    width: 1500px;
+}
+
+.margin-top-25 {
+    margin-top: 25px;
+}
+
+.width-100-perc {
+    width: 270px;
+}
+
+.thumb-title {
+    font-size: 25px;
+    margin-top: 15px;
+    font-weight: 500;
+}
+
+.thumb-desc {
+    margin-top: 10px;
+    font-size: 14px;
+    color: black;
+}
+
+.loadingSpinner {
+    top: 50%;
+    left: 50%;
+}

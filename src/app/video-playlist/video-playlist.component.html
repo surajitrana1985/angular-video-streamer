@@ -1,0 +1,14 @@
+<ul>
+    <li *ngFor="let playlistItem of playlist;let index=index"
+        (click)="onPlaylistClick(playlistItem, index)" [class.selected]="playlistItem === currentItem">
+        <span class="pull-left">
+            <img [src]="playlistItem.thumbnail" class="width-100-perc"/>
+        </span>
+        <div class="thumb-title">
+            {{playlistItem.title}}
+            <div class="thumb-desc">
+                Lorem Ipsum is simply dummy text of the printing and typesetting industry.
+            </div>
+        </div>
+    </li>
+</ul>
