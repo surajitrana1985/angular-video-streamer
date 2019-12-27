@@ -20,15 +20,10 @@ export class VideoPlayerComponent implements OnInit {
   onPlayerReady(vgAPI: VgAPI) {
     this.videoAPI = vgAPI;
     this.videoAPI.getDefaultMedia().subscriptions.loadedMetadata.subscribe(this.startVideoPlay.bind(this));
-    this.videoAPI.getDefaultMedia().subscriptions.ended.subscribe(this.startNextVideo.bind(this));
   }
 
   startVideoPlay() {
     this.videoAPI.play();
-  }
-
-  startNextVideo() {
-    
   }
 
 }
